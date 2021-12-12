@@ -16,8 +16,7 @@ class SubCategory(models.Model):
 		db_table = 'sub_categories'
 
 class Drink(models.Model):
-	name_en = models.CharField(max_length=100)
-	name_kr = models.CharField(max_length=100)
+	name = models.CharField(max_length=100)
 	description = models.TextField(max_length=3000)
 	thumbnail = models.URLField(max_length=500)
 	serving = models.DecimalField(max_digits=4, decimal_places=1)
